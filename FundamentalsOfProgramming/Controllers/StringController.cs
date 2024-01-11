@@ -9,15 +9,15 @@ namespace API.Controllers
     [ApiController]
     public class StringController : ControllerBase
     {
-        private readonly IStringAdapter _StringAdapter;
-        public StringController(IStringAdapter ImageAdapter)
+        private readonly IStringService _StringService;
+        public StringController(IStringService StringService)
         {
-            _StringAdapter = ImageAdapter;
+            _StringService = StringService;
         }
         [HttpGet]
         public string ReverseString(string text)
         {
-            return _StringAdapter.ReverseString(text);
+            return _StringService.ReverseString(text);
         }
     }
 }

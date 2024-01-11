@@ -1,6 +1,4 @@
-﻿using Adapters;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
 
 namespace API.Controllers
@@ -10,16 +8,16 @@ namespace API.Controllers
     [ApiController]
     public class NumberController : ControllerBase
     {
-        private readonly INumberAdapter _adapter;
-        public NumberController(INumberAdapter adapter)
+        private readonly INumberService _NumberService;
+        public NumberController(INumberService NumberService)
         {
-            _adapter = adapter;
+            _NumberService = NumberService;
         }
 
         [HttpGet]
         public List<int> GetPrimes(int number)
         {
-            return _adapter.GetPrimes(number);
+            return _NumberService.GetPrimes(number);
         }
 
     }

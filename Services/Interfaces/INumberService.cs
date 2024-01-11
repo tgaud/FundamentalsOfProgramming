@@ -8,6 +8,7 @@ namespace Services.Interfaces
 {
     public interface INumberService
     {
+        abstract List<int> GetPrimes(int number);
 
     }
 }

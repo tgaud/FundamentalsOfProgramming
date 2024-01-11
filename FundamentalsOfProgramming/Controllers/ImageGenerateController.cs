@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
+using Services.Services;
 
 namespace API.Controllers
 {
@@ -8,16 +9,16 @@ namespace API.Controllers
     [ApiController]
     public class ImageGenerateController : ControllerBase
     {
-        private readonly IImageAdapter _imageAdapter;
-        public ImageGenerateController(IImageAdapter ImageAdapter)
+        private readonly ImageService _ImageService;
+        public ImageGenerateController(ImageService ImageService)
         {
-            _imageAdapter = ImageAdapter;
+            _ImageService = ImageService;
         }
 
         [HttpGet]
         public string GenerateDogImage()
         {
-            return _imageAdapter.GenerateDog();
+            return _ImageService.GenerateDog();
         }
 
     }

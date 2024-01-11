@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Services.Interfaces
 {
-    internal interface IStringService
+    public interface IStringService
     {
+        abstract string ReverseString(string text);
+
     }
 }
