@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "FundamentalsOfProgramming\API.csproj", "{A9EC4B41-37F7-42A8-9D68-22E3869CC3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{8FAF42C8-9D2F-4949-98E6-100A2DCA5567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapters", "Adapters\Adapters.csproj", "{A677C483-CEC4-483B-ABDF-82032AB2EAE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9EC4B41-37F7-42A8-9D68-22E3869CC3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EC4B41-37F7-42A8-9D68-22E3869CC3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EC4B41-37F7-42A8-9D68-22E3869CC3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EC4B41-37F7-42A8-9D68-22E3869CC3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FAF42C8-9D2F-4949-98E6-100A2DCA5567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FAF42C8-9D2F-4949-98E6-100A2DCA5567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FAF42C8-9D2F-4949-98E6-100A2DCA5567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FAF42C8-9D2F-4949-98E6-100A2DCA5567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A677C483-CEC4-483B-ABDF-82032AB2EAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A677C483-CEC4-483B-ABDF-82032AB2EAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A677C483-CEC4-483B-ABDF-82032AB2EAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A677C483-CEC4-483B-ABDF-82032AB2EAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E8C0DEB-A60B-44B1-A243-68702C2FE995}
+	EndGlobalSection
+EndGlobal
