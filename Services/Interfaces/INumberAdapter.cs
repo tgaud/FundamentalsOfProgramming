@@ -10,5 +10,6 @@ namespace Services.Interfaces
     {
 
         abstract List<int> GetPrimes(int number);
+        abstract int GetFactorial(int number); 
     }
 }

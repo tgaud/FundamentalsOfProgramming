@@ -22,7 +22,17 @@ namespace Adapters
                     number = number / i;
                 }
 
+            string ads = "das";
+            ads.ToLower().StartsWith('r');
+
             return primes;
+        }
+
+        public int GetFactorial(int x)
+        {
+            if (x == 0)
+                return 1;
+            return x * GetFactorial(x - 1);
         }
     }
 }
