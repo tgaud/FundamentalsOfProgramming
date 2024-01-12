@@ -21,8 +21,14 @@ namespace Adapters
                     primes.Add(i);
                     number = number / i;
                 }
-
             return primes;
+        }
+
+        public int GetFactorial(int x)
+        {
+            if (x == 0)
+                return 1;
+            return x * GetFactorial(x - 1);
         }
     }
 }

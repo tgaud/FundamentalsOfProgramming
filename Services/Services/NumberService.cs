@@ -9,15 +9,20 @@ namespace Services.Services
 {
     public class NumberService : INumberService
     {
-
         private readonly INumberAdapter _adapter;
         public NumberService(INumberAdapter adapter)
         {
             _adapter = adapter;
         }
-        public List<int> GetPrimes (int number)
+
+        public List<int> GetPrimes(int number)
         {
-            return _adapter.GetPrimes(number); 
+            return _adapter.GetPrimes(number);
+        }
+
+        public int GetFactorial(int number)
+        {
+            return _adapter.GetFactorial(number);
         }
     }
 }

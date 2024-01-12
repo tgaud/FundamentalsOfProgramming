@@ -15,9 +15,9 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public List<int> GetPrimes(int number)
+        public int GetFactorial(int number)
         {
-            return _NumberService.GetPrimes(number);
+            return _NumberService.GetFactorial(number);
         }
 
     }
