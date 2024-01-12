@@ -24,6 +24,9 @@ namespace Adapters
             return primes;
         }
 
+            return primes;
+        }
+
         public int GetFactorial(int x)
         {
             if (x == 0)
